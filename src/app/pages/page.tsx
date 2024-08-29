@@ -8,7 +8,7 @@ import ModalFormXl from '../../components/modalRespon';
 
 import './globals.css';
 
-const HomePage = () => {
+const page = () => {
     const [empleados, setEmpleados] = useState<Empleado[]>([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -43,4 +43,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default page;
