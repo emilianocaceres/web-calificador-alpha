@@ -1,11 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import EmpleadoTable from '../../components/EmpleadoTable';
-import { Empleado } from '../../types/Empleado';
-import { calcularCalificacionYSalario } from '../../utils/calculos';
-import ModalFormXl from '../../components/modalRespon';
-
+import { Empleado } from '../types/Empleado';
+import { calcularCalificacionYSalario } from '../utils/calculos';
+import EmpleadoTable from '../components/EmpleadoTable';
 const HomePage = () => {
     const [empleados, setEmpleados] = useState<Empleado[]>([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
