@@ -6,9 +6,7 @@ import { Empleado } from '../../types/Empleado';
 import { calcularCalificacionYSalario } from '../../utils/calculos';
 import ModalFormXl from '../../components/modalRespon';
 
-import './globals.css';
-
-const page = () => {
+const HomePage = () => {
     const [empleados, setEmpleados] = useState<Empleado[]>([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -43,4 +41,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default HomePage;
